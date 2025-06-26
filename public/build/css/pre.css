@@ -208,6 +208,7 @@
 .projects__item {
   @apply col-span-3 overflow-hidden;
   @apply md:col-span-12;
+  aspect-ratio: 1/1;
 }
 .projects__item img {
   @apply w-full h-full object-cover transition-all duration-300;
@@ -322,4 +323,68 @@
 }
 .contact--homepage .contact__link i {
   @apply mr-2.5 text-primary;
+}
+
+.introduction {
+  @apply py-12;
+}
+
+.introduction__container {
+  @apply container grid grid-cols-12 gap-6;
+  @apply lg:px-6;
+  @apply sm:px-4;
+}
+
+.introduction__inner {
+  @apply grid grid-cols-12 items-center gap-6 col-span-12;
+}
+
+.introduction__media,
+.introduction__content {
+  @apply col-span-6;
+  @apply md:col-span-12;
+}
+
+.introduction__media img {
+  @apply rounded-full;
+}
+
+.introduction__content {
+  @apply pl-5 py-3 flex flex-col;
+  @apply md:pl-0 md:py-0;
+}
+
+.introduction__title {
+  @apply text-43_45 text-white font-fontTitle uppercase font-black;
+}
+.introduction__title strong {
+  @apply not-italic text-primary;
+}
+.introduction__title + * {
+  @apply mt-3;
+}
+
+.introduction__text {
+  @apply flex flex-col;
+}
+.introduction__text p {
+  @apply font-fontText text-white text-17_26;
+}
+.introduction__text p + * {
+  @apply mt-3;
+}
+
+.introduction__subtitle {
+  @apply text-21_23 font-semibold font-fontTitle text-white uppercase;
+}
+.introduction__subtitle + * {
+  @apply mt-4;
+}
+
+.introduction__buttons {
+  @apply mt-6;
+}
+
+body {
+  @apply bg-black;
 }

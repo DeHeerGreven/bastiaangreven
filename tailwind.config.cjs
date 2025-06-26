@@ -162,11 +162,13 @@ content: [
     variants: {
         borderColor: ['responsive', 'hover', 'focus', 'focus-within'],
     },
+    safelist: ['aspect-square'],
     plugins: [
         require('postcss-import'),
         require('tailwindcss'),
         require('autoprefixer'),
-        require('@tailwindcss/aspect-ratio')
+        require('@tailwindcss/aspect-ratio'),
+        
     ],
 }
 
