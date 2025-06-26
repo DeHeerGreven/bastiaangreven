@@ -1,0 +1,56 @@
+.hero {
+    @apply py-12;
+}
+
+.hero__container {
+    @apply container grid grid-cols-12 gap-6;
+    @apply lg:px-6;
+    @apply sm:px-4;
+}
+
+.hero__content {
+    @apply col-span-6;
+    @apply md:col-span-12 md:text-center md:order-1;
+}
+
+.hero__media {
+    @apply col-span-6;
+    @apply md:col-span-12;
+
+    img {
+        @apply rounded-full;
+    }
+}
+
+.hero__title {
+    @apply text-53_54 font-black font-fontTitle text-white uppercase mb-2 block;
+
+    strong {
+        @apply text-primary not-italic;
+    }
+}
+
+.hero__subtitle {
+    @apply text-21_23 font-semibold font-fontTitle text-white uppercase;
+
+    + * {
+        @apply mt-4;
+    }
+}
+
+.hero__description {
+    @apply text-17_26 font-light text-white font-fontText;
+
+    + * {
+        @apply mt-4;
+    }
+}
+
+.hero__inner {
+    @apply col-span-12 grid grid-cols-12 items-center gap-6;
+}
+
+.hero__cta-buttons {
+    @apply flex gap-3;
+    @apply md:justify-center;
+}

@@ -1,0 +1,29 @@
+.nav {
+    @apply py-4 drop-shadow-md;
+}
+
+.nav__container {
+    @apply container grid grid-cols-12 gap-6;
+    @apply lg:px-6;
+    @apply sm:px-4;
+}
+
+.nav__content {
+    @apply col-span-12 flex items-center justify-between;
+}
+
+.nav__logo {
+    @apply mb-2.5 w-44;
+}
+
+.nav__list {
+    @apply flex justify-center ml-6;
+    @apply lg:hidden;
+}
+
+.nav__item {
+    @apply mr-6 font-bebas text-white transition-all duration-300;
+    @apply hover:text-primary;
+}
+
+//  text-23_32

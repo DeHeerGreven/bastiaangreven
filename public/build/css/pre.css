@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* jouw modules */
+.hero {
+  @apply py-12;
+}
+
+.hero__container {
+  @apply container grid grid-cols-12 gap-6;
+  @apply lg:px-6;
+  @apply sm:px-4;
+}
+
+.hero__content {
+  @apply col-span-6;
+  @apply md:col-span-12 md:text-center md:order-1;
+}
+
+.hero__media {
+  @apply col-span-6;
+  @apply md:col-span-12;
+}
+.hero__media img {
+  @apply rounded-full;
+}
+
+.hero__title {
+  @apply text-53_54 font-black font-fontTitle text-white uppercase mb-2 block;
+}
+.hero__title strong {
+  @apply text-primary not-italic;
+}
+
+.hero__subtitle {
+  @apply text-21_23 font-semibold font-fontTitle text-white uppercase;
+}
+.hero__subtitle + * {
+  @apply mt-4;
+}
+
+.hero__description {
+  @apply text-17_26 font-light text-white font-fontText;
+}
+.hero__description + * {
+  @apply mt-4;
+}
+
+.hero__inner {
+  @apply col-span-12 grid grid-cols-12 items-center gap-6;
+}
+
+.hero__cta-buttons {
+  @apply flex gap-3;
+  @apply md:justify-center;
+}
+
+.footer {
+  @apply flex justify-center items-center py-8;
+}
+
+.footer__text {
+  @apply text-white font-bebas text-21_23;
+}
+
+.nav {
+  @apply py-4 drop-shadow-md;
+}
+
+.nav__container {
+  @apply container grid grid-cols-12 gap-6;
+  @apply lg:px-6;
+  @apply sm:px-4;
+}
+
+.nav__content {
+  @apply col-span-12 flex items-center justify-between;
+}
+
+.nav__logo {
+  @apply mb-2.5 w-44;
+}
+
+.nav__list {
+  @apply flex justify-center ml-6;
+  @apply lg:hidden;
+}
+
+.nav__item {
+  @apply mr-6 font-bebas text-white transition-all duration-300;
+  @apply hover:text-primary;
+}
+
+.side-menu {
+  @apply fixed inset-0 bg-black bg-opacity-50 z-50 transition-transform duration-500 ease-in-out transform translate-x-full;
+}
+.side-menu.active {
+  @apply translate-x-0;
+}
+.side-menu .side-menu__content {
+  @apply w-64 h-full bg-black p-6 relative;
+}
+.side-menu .side-menu__content .close-menu {
+  @apply absolute top-4 right-4 flex flex-col justify-between items-center w-8 h-8 bg-transparent border-none cursor-pointer;
+}
+.side-menu .side-menu__content .close-menu .close-menu-bar {
+  @apply block w-full;
+}
+.side-menu .side-menu__content .close-menu .close-menu-bar i {
+  @apply text-2xl text-white;
+}
+.side-menu .side-menu__content ul {
+  @apply flex flex-col gap-4;
+}
+.side-menu .side-menu__content ul li a {
+  @apply text-white font-bebas font-medium transition-all duration-300;
+  @apply hover:text-primary;
+}
+.side-menu .side-menu__content .nav__logo {
+  @apply w-36;
+}
+.side-menu .side-menu__content .nav__logo + * {
+  @apply mt-10;
+}
+
+.menu-toggle {
+  @apply flex flex-col justify-between items-center w-8 h-6 space-y-1;
+  @apply xl:hidden;
+}
+.menu-toggle .menu-toggle-bar {
+  @apply block w-full h-1 bg-primary;
+}
+
+.experience {
+  @apply my-12 py-12;
+  @apply md:my-9;
+}
+
+.experience__container {
+  @apply container grid grid-cols-12 gap-y-12 gap-x-6;
+  @apply lg:px-6;
+  @apply sm:px-4;
+}
+
+.experience__content {
+  @apply col-span-12;
+}
+
+.experience__title {
+  @apply text-43_45 text-white font-fontTitle uppercase font-black flex justify-center;
+  @apply xs:block;
+}
+.experience__title strong {
+  @apply not-italic text-primary mx-2.5;
+  @apply xs:ml-0;
+}
+.experience__title + * {
+  @apply mt-6;
+}
+
+.experience__items {
+  @apply col-span-12 grid grid-cols-12 gap-6 items-center;
+}
+
+.experience__item {
+  @apply col-span-3;
+  @apply xs:col-span-6;
+}
+.experience__item:first-child, .experience__item:nth-child(3) {
+  @apply p-12;
+  @apply md:p-8;
+  @apply sm:p-6;
+  @apply mob:p-4;
+}
+.experience__item:nth-child(2) {
+  @apply mob:p-3;
+}
+.experience__item:nth-child(4) {
+  @apply xl:p-7;
+  @apply lg:p-8;
+  @apply sm:p-2;
+  @apply mob:p-3;
+}
+
+.experience__item__content {
+  @apply rounded-md;
+}
+
+.experience__logo {
+  @apply w-full;
+}

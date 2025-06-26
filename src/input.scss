@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* jouw modules */
+@import "scss/hero.scss";
+@import "scss/footer.scss";
+@import "scss/nav.scss";  
+@import "scss/side-menu.scss";  
+@import "scss/experience.scss";  
+@import "scss/projects.scss";  

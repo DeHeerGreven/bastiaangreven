@@ -1,0 +1,53 @@
+// Basis styling voor side menu
+.side-menu {
+    @apply fixed inset-0 bg-black bg-opacity-50 z-50 transition-transform duration-500 ease-in-out transform translate-x-full;
+
+    &.active {
+        @apply translate-x-0;
+    }
+
+    .side-menu__content {
+        @apply w-64 h-full bg-black p-6 relative;
+
+        // Sluitknop
+        .close-menu {
+            @apply absolute top-4 right-4 flex flex-col justify-between items-center w-8 h-8 bg-transparent border-none cursor-pointer;
+
+            .close-menu-bar {
+                @apply block w-full;
+
+                i {
+                    @apply text-2xl text-white;
+                }
+            }
+        }
+
+        ul {
+            @apply flex flex-col gap-4;
+            li {
+                a {
+                    @apply text-white font-bebas font-medium transition-all duration-300;
+                    @apply hover:text-primary;
+                }
+            }
+        }
+
+        .nav__logo {
+            @apply w-36;
+
+            + * {
+                @apply mt-10;
+            }
+        }
+    }
+}
+
+// Menu toggle button
+.menu-toggle {
+    @apply flex flex-col justify-between items-center w-8 h-6 space-y-1;
+    @apply xl:hidden;
+
+    .menu-toggle-bar {
+        @apply block w-full h-1 bg-primary;
+    }
+}
