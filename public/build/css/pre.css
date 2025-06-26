@@ -189,3 +189,58 @@
 .experience__logo {
   @apply w-full;
 }
+
+.projects--homepage {
+  @apply py-12;
+  @apply md:py-9;
+}
+
+.projects__container {
+  @apply container;
+  @apply lg:px-6;
+  @apply sm:px-4;
+}
+
+.projects__items {
+  @apply grid grid-cols-12 gap-6 items-center mb-6;
+}
+
+.projects__item {
+  @apply col-span-3 overflow-hidden;
+  @apply md:col-span-12;
+}
+.projects__item img {
+  @apply w-full h-full object-cover transition-all duration-300;
+}
+.projects__item:hover img {
+  @apply scale-105;
+}
+
+.projects__content {
+  @apply mt-4 mb-12;
+}
+
+.projects__title {
+  @apply text-43_45 text-white font-fontTitle uppercase font-black flex justify-start;
+}
+.projects__title strong {
+  @apply text-primary pl-3;
+}
+.projects__title + * {
+  @apply mt-3;
+}
+
+.projects__subtitle {
+  @apply text-17_18 text-white font-fontText block;
+}
+.projects__subtitle a {
+  @apply text-primary transition-all duration-300;
+  @apply hover:underline;
+}
+
+.projects__item__title {
+  @apply text-21_23 text-white font-fontTitle uppercase font-black;
+}
+.projects__item__title + * {
+  @apply mt-5;
+}

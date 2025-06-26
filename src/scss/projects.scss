@@ -14,7 +14,7 @@
 }
 
 .projects__item {
-    @apply col-span-3 aspect-square overflow-hidden;
+    @apply col-span-3 overflow-hidden;
     @apply md:col-span-12;
 
     img {
