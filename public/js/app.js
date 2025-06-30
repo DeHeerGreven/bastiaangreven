@@ -1,7 +1,5 @@
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
-import { gsap } from "gsap";
-
+import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+import { gsap }  from "https://cdn.jsdelivr.net/npm/gsap@3.12.4/+esm";
 
 
 // Menu functionaliteit
