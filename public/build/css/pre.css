@@ -385,6 +385,35 @@
   @apply mt-6;
 }
 
+.btn-text--primary, .btn-solid--transparent, .btn-solid--primary {
+  @apply inline-flex transition-all duration-300;
+}
+
+.btn-solid--transparent, .btn-solid--primary {
+  @apply min-h-[51px] text-21_23 px-6 font-medium font-bebas justify-center items-center rounded-[4px] whitespace-nowrap uppercase;
+  @apply xs:w-full xs:px-3 xs:py-1;
+}
+
+.btn-text--primary {
+  @apply min-h-11 text-23_32 items-center text-center font-bebas;
+  @apply xs:min-h-11 xs:justify-center;
+}
+
+.btn-solid--primary {
+  @apply bg-primary text-white;
+  @apply hover:bg-white hover:text-primary;
+}
+
+.btn-solid--transparent {
+  @apply bg-transparent border border-primary text-white;
+  @apply hover:bg-white hover:border-white hover:text-primary;
+}
+
+.btn-text--primary {
+  @apply text-primary;
+  @apply hover:text-white;
+}
+
 body {
   @apply bg-black;
 }

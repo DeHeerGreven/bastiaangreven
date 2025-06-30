@@ -569,6 +569,9 @@ video {
 .flex {
   display: flex;
 }
+.inline-flex {
+  display: inline-flex;
+}
 .grid {
   display: grid;
 }
@@ -583,6 +586,12 @@ video {
 }
 .h-full {
   height: 100%;
+}
+.min-h-11 {
+  min-height: 2.75rem;
+}
+.min-h-\[51px\] {
+  min-height: 51px;
 }
 .w-64 {
   width: 16rem;
@@ -617,12 +626,29 @@ video {
 .gap-y-12 {
   row-gap: 3rem;
 }
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+.rounded-\[4px\] {
+  border-radius: 4px;
+}
+.border {
+  border-width: 1px;
+}
 .border-none {
   border-style: none;
+}
+.border-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 141 35 / var(--tw-border-opacity, 1));
 }
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 141 35 / var(--tw-bg-opacity, 1));
 }
 .bg-transparent {
   background-color: transparent;
@@ -637,6 +663,10 @@ video {
 .p-6 {
   padding: 1.5rem;
 }
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -647,6 +677,9 @@ video {
 }
 .pl-5 {
   padding-left: 1.25rem;
+}
+.text-center {
+  text-align: center;
 }
 .font-bebas {
   font-family: Bebas Neue, sans-serif;
@@ -1671,6 +1704,98 @@ video {
   margin-top: 1.5rem;
 }
 
+.btn-text--primary, .btn-solid--transparent, .btn-solid--primary {
+  display: inline-flex;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.btn-solid--transparent, .btn-solid--primary {
+  min-height: 51px;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border-radius: 4px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-family: Bebas Neue, sans-serif;
+  font-size: clamp(16.8px, calc(16.8px + ((21 - 16.8) * ((100vw - 360px) / (1230 - 360)))), 21px);
+  line-height: clamp(18.400000000000002px, calc(18.400000000000002px + ((23 - 18.400000000000002) * ((100vw - 360px) / (1230 - 360)))), 23px);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+@media (max-width: 500px) {
+
+  .btn-solid--transparent, .btn-solid--primary {
+    width: 100%;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+}
+
+.btn-text--primary {
+  min-height: 2.75rem;
+  align-items: center;
+  text-align: center;
+  font-family: Bebas Neue, sans-serif;
+  font-size: clamp(18.400000000000002px, calc(18.400000000000002px + ((23 - 18.400000000000002) * ((100vw - 360px) / (1230 - 360)))), 23px);
+  line-height: clamp(25.6px, calc(25.6px + ((32 - 25.6) * ((100vw - 360px) / (1230 - 360)))), 32px);
+}
+
+@media (max-width: 500px) {
+
+  .btn-text--primary {
+    min-height: 2.75rem;
+    justify-content: center;
+  }
+}
+
+.btn-solid--primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 141 35 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.btn-solid--primary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(229 141 35 / var(--tw-text-opacity, 1));
+}
+
+.btn-solid--transparent {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(229 141 35 / var(--tw-border-opacity, 1));
+  background-color: transparent;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.btn-solid--transparent:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(229 141 35 / var(--tw-text-opacity, 1));
+}
+
+.btn-text--primary {
+  --tw-text-opacity: 1;
+  color: rgb(229 141 35 / var(--tw-text-opacity, 1));
+}
+
+.btn-text--primary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
 body {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
@@ -1756,6 +1881,14 @@ body {
   font-weight: 400;
   src: url("/fonts/bebas-neue-v14-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+.hover\:border-white:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+}
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -1806,5 +1939,18 @@ body {
 
   .xs\:block {
     display: block;
+  }
+
+  .xs\:min-h-11 {
+    min-height: 2.75rem;
+  }
+
+  .xs\:w-full {
+    width: 100%;
+  }
+
+  .xs\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 }
